@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Display extends Component {
   state = {
     title: 'Display Component',
-    imageUrl: 'https://picsum.photos/800/800'
+    imageUrl: 'https://picsum.photos/800/200'
   };
   render() {
     return (
