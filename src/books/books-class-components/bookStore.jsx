@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BookItem from './bookItem';
 
 class BookStore extends Component {
   state = { 
@@ -34,6 +35,7 @@ class BookStore extends Component {
              <th>AUTHOR</th> 
              <th>GENRE</th> 
              <th>COST</th> 
+             <th></th>
              
             </tr>
           </thead>
@@ -48,17 +50,28 @@ class BookStore extends Component {
 
   renderAllBooks(eachBook){
     return this.state.allBooks.map((eachBook)=>(
-      <tr key={eachBook.id}>
+      // <tr key={eachBook.id}>
 
-      <td>{eachBook.id}</td>
-      <td><img src={eachBook.bookImageUrl} width="150px" height="100px" alt='Books'></img></td>
-      <td>{eachBook.bookTitle}</td>
-      <td>{eachBook.bookAuthor}</td>
-      <td>{eachBook.bookGenre}</td>
-      <td>{eachBook.bookCost}</td>
+      // <td>{eachBook.id}</td>
+      // <td><img src={eachBook.bookImageUrl} width="150px" height="100px" alt='Books'></img></td>
+      // <td>{eachBook.bookTitle}</td>
+      // <td>{eachBook.bookAuthor}</td>
+      // <td>{eachBook.bookGenre}</td>
+      // <td>{eachBook.bookCost}</td>
 
-      </tr>
+      // </tr>
+
+      <BookItem data={eachBook} onDelete={() => this.handleDelete(eachBook)}></BookItem>
     ))
+  }
+
+  handleDelete = (eachBook) =>{
+    //here we should remove the book from the allBooks array
+    console.log("parent handle del");
+    console.log(eachBook.id);
+    let allBook = this.state.allBooks
+    allBook = allBook.filter((eBook)=>(eBook.id!==eachBook.id));
+    this.setState({allBooks: allBook})
   }
 }
  

@@ -3,7 +3,7 @@ import './App.css';
 // import Display from './components/display';
 // import Counter from './components/counter';
 // import ListColors from './components/listcolors'; 
-import BookStore from './books/bookStore';
+import BookStore from './books/books-class-components/bookStore';
 
 
 function App() {
