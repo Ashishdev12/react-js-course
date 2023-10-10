@@ -1,0 +1,19 @@
+1. we need the json-server which will serve like the backend application
+2. the json-server will automatically create the endpoints based on the json file that you feed to it
+3. using fetch API we can make asynchrous http calls to the backend-application
+
+Steps -  to work with json-server
+---------------------------------
+1. install json-server
+        npm install json-server
+2. start the json server on port 4000 by watching over db.json
+        json-server --port 4000 --watch db.json
+3. onstarting the server we get this message
+        Loading db.json
+        Oops, db.json doesn't seem to exist
+        Creating db.json with some default data
+4. update the db.json file with the book data
+5. the json-server will automatically create the REST endpoint based on the updated data in db.json
+
+Steps - make asynchrounous http request from react application to backend appliczation
+---------------------------------------------------------------------------------------

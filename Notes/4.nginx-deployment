@@ -1,0 +1,22 @@
+1. install nginx server 
+2. build your react application by typing this command
+        npm run build
+    by running this command we will get a build folder with the bundled react application
+3. copy all the files of the build folder into the html folder of nginx
+4. next make this entry in nginx/conf/nginx.conf file, this will open up a port 
+                    server {
+                listen 6565;
+                server_name localhost;
+                location / {
+                root html;
+                index index.html index.htm;
+                try_files $uri $uri/ /index.html;
+                }
+                error_page 500 502 503 504 /50x.html;
+                location = /50x.html {
+                root html;
+                }
+                }
+5. start the nginx server by clicking on nginx app
+6. type the url http://localhost:6565 in the browser to test if the react
+     application which is deployed in nginx is working or not

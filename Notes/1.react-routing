@@ -1,0 +1,31 @@
+Steps
+------
+1. install react-router-dom
+        npm install react-router-dom
+2. in index.js file , wrap the App tag around <BrowserRouter>. BrowserRouter is imported from 'react-router-dom'
+3. configure/specify the route paths for the components in App.js file
+
+
+Navigating to components through LINK ( a tags)
+----------------------------------------------
+1. create a header component
+2. usev the LINK tags to route to components
+
+Navigate to component programatically
+-------------------------------------
+1. here we will use a hook called useNavigate() from react-router-dom library
+2. refer BookAddFunction.js, BookStoreFunction.js
+
+Nested routing
+---------------
+1. configure the components as nested route in app.js
+2. use the <Outlet> tag in the place where the nested routed component should be displayed
+3. refer BookStoreFunction and BookViewFunction
+
+dynamic routing
+----------------
+1. configure the dynamic routes in App.js file
+    dynamic routes will have :variables in the route path
+2. while routing to the component attach a value to route url 
+3. extract the route variable from the route url using useParams in react-router-dom library
+4. refer components/books/books-function-components/BookStoreFunction and components/books/books-function-components/BookViewFunction

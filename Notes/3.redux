@@ -1,0 +1,32 @@
+Redux is a predictable state container for Javascript application
+
+useContext + useReducer ===> can we get what redux does
+
+libraries
+---------
+react
+redux
+react-redux
+
+3 core concepts in redux
+---------------------------
+
+1. Store ----> Shop
+2. Action -----> BUY_A_COOKIE
+3. Reducer -----> Shopkeeper
+
+Store with state
+-----------------
+state {
+    numberOfCookies: 10
+}
+
+action object
+------------
+{
+    type: BUY_A_COOKIE
+}
+
+reducer function
+----------------
+(state, action)=====> new state

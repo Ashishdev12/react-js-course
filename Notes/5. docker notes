@@ -1,0 +1,17 @@
+STEPS to dockorize this react application
+------------------------------------------
+1.  Make sure docker in installed in your local laptop and the docker engine is running
+2. we have to create our own image to dockerize the react application
+3. to create our own image we need to create a dockerfile in this react project
+4. write the steps for creating your image in the dockerfile - refer the dockerfile in this project
+5. next we should build this docker file so that we get an image
+            docker build -t my-react-app-image .
+6. now that the image is create, confirm by typing 
+        docker images
+7. run the image so that the conatiner is created
+        docker run --name my-react-app-container -d -p 6789:80 my-react-app-image
+8. now the container is created and nginx server is running inside the container with our react app deployed
+9. check  the conatiner is running or not with the command  , this command will list all the containers
+        docker ps -a
+9. now we can test by typing in the url 
+        http://localhost:6789
