@@ -18,6 +18,7 @@ function BookItemFunction(props) {
       <td>{props.data.bookGenre}</td>
       <td>{props.data.bookCost}</td>
       {/* <td><button type="button" className="btn btn-danger btn-sm" onClick={handleDelete}>Delete</button></td> */}
+      <td><button type="button" className="btn btn-warning btn-sm" onClick={() =>props.onView(props.data)}>View</button></td>
       <td><button type="button" className="btn btn-danger btn-sm" onClick={() =>props.onDelete(props.data)}>Delete</button></td>
 
     </tr>
