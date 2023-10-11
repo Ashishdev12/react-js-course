@@ -11,12 +11,12 @@ function BookViewFunction() {
 
       <div className="card-body">{params.bookId}</div>
 
-      <div className="card-footer bg-waring">
+      <div className="card-footer bg-warning">
 
         <Link to="/book-store-function" className="btn btn-light text-warning">
           Close
         </Link>
-        
+
       </div>
     </div>
   );
