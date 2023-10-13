@@ -27,6 +27,10 @@ function Header() {
             <Link className='nav-link' to="/book-store-function">BookStore Function Component</Link>
           </li>
 
+          <li className='nav-item'>
+            <Link className='nav-link' to="/book-store-http-function">BookStore Http Function Component</Link>
+          </li>
+
         </ul>
       </div>
     </nav>

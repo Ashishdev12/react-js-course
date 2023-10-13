@@ -1,5 +1,5 @@
 import React from "react";
-function BookItemFunction(props) {
+function BookItemHttpFunction(props) {
   return (
     <React.Fragment>
       <tr key={props.data.id}>
@@ -40,4 +40,4 @@ function BookItemFunction(props) {
   );
 }
 
-export default BookItemFunction;
+export default BookItemHttpFunction;

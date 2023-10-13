@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/header';
 import Display from './components/display';
@@ -9,6 +10,13 @@ import BookStore from './components/books/books-class-components/bookStore';
 import BookStoreFunction from './components/books/books-function-components/bookStoreFunction';
 import BookAddFunction from './components/books/books-function-components/bookAddFunction';
 import BookViewFunction from './components/books/books-function-components/bookViewFunction';
+
+import BookStoreHttpFunction from './components/books/books-function-http-components/bookStoreHttpFunction';
+import BookViewHttpFunction from './components/books/books-function-http-components/bookViewHttpFunction';
+import BookAddHttpFunction from './components/books/books-function-http-components/bookAddHttpFunction';
+
+
+
 
 
 
@@ -43,6 +51,10 @@ function App() {
         </Route>
 
         <Route path="book-add-function" element={<BookAddFunction/>}></Route>
+
+        <Route path="book-store-http-function" element={<BookStoreHttpFunction/>}></Route>
+        <Route path="book-view-http-function" element={<BookViewHttpFunction/>}></Route>
+        <Route path="book-add-http-function" element={<BookAddHttpFunction/>}></Route>
 
       </Routes>
     </div>
