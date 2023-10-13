@@ -1,27 +1,39 @@
 import React from "react";
+
 function BookItemHttpFunction(props) {
+  let eachBook = props.bookData;
+
   return (
     <React.Fragment>
-      <tr key={props.data.id}>
-        <td>{props.data.id}</td>
+      <tr key={eachBook.id}>
+        <td>{eachBook.id}</td>
         <td>
           <img
-            src={props.data.bookImageUrl}
+            src={eachBook.bookImageUrl}
             width="150px"
             height="100px"
             alt="Books"
           ></img>
         </td>
-        <td>{props.data.bookTitle}</td>
-        <td>{props.data.bookAuthor}</td>
-        <td>{props.data.bookGenre}</td>
-        <td>{props.data.bookCost}</td>
+        <td>{eachBook.bookTitle}</td>
+        <td>{eachBook.bookAuthor}</td>
+        <td>{eachBook.bookGenre}</td>
+        <td>{eachBook.bookCost}</td>
         {/* <td><button type="button" className="btn btn-danger btn-sm" onClick={handleDelete}>Delete</button></td> */}
+        
+        <td>
+          <button
+            type="button"
+            className="btn btn-primary btn-sm">
+            Edit
+          </button>
+        </td>
+        
         <td>
           <button
             type="button"
             className="btn btn-warning btn-sm"
-            onClick={() => props.onView(props.data)}
+            onClick={() => props.onView(eachBook)}
           >
             View
           </button>
@@ -30,9 +42,9 @@ function BookItemHttpFunction(props) {
           <button
             type="button"
             className="btn btn-danger btn-sm"
-            onClick={() => props.onDelete(props.data)}
+            onClick={() => props.onDelete(eachBook)}
           >
-            Delete
+            Remove
           </button>
         </td>
       </tr>

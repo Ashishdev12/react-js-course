@@ -52,8 +52,10 @@ function App() {
 
         <Route path="book-add-function" element={<BookAddFunction/>}></Route>
 
-        <Route path="book-store-http-function" element={<BookStoreHttpFunction/>}></Route>
-        <Route path="book-view-http-function" element={<BookViewHttpFunction/>}></Route>
+        <Route path="book-store-http-function" element={<BookStoreHttpFunction/>}>
+          <Route path="book-view-http-function/:bookId" element={<BookViewHttpFunction/>}></Route>
+        </Route>
+       
         <Route path="book-add-http-function" element={<BookAddHttpFunction/>}></Route>
 
       </Routes>

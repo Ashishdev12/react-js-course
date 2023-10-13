@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function BookAddHttpFunction() {
-
+  
+  const navigate = useNavigate();
   const [title, setTitle] = useState("ADD NEW BOOK");
   const [newBook, setNewBook] = useState(
     {
@@ -16,7 +18,8 @@ function BookAddHttpFunction() {
 
   const handleSubmit = ((event)=>{
     event.preventDefault(); // this will stop the form submission/request to the server
-    console.log(newBook); 
+    console.log("New Book:", JSON.stringify(newBook));
+   
      // this form data which is available in the newBook state variable should be sent to back end
 
     // navigate to book-store-function
@@ -24,12 +27,16 @@ function BookAddHttpFunction() {
 
 
   return (
+
     <div className="container m-5">
       <form onSubmit={handleSubmit}>
+
         <div className="card">
+
           <div className="card-header bg-success text-white">
             <h2>{title}</h2>
           </div>
+          
           <div className="card-body">
 
             <div>
