@@ -1,6 +1,6 @@
 Redux is a predictable state container for Javascript application
 
-useContext + useReducer ===> can we get what redux does
+useContext + useReducer ===> can we get what redux does // Yes we can achieve what redux does
 
 libraries
 ---------
@@ -21,7 +21,7 @@ state {
     numberOfCookies: 10
 }
 
-action object
+action object // action should have abject type
 ------------
 {
     type: BUY_A_COOKIE
