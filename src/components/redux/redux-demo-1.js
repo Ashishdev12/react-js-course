@@ -6,7 +6,7 @@
 
 // STEPS to run this file
 // 1. install redux library
-//          npm install redux
+//          npm install redux 
 // 2. finnish the code in this file
 // 3. run this file
 //          navigate to the folder of this file and run   the command
