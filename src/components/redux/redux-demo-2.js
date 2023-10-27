@@ -69,7 +69,7 @@ const rootReducer = combineReducers({
 
 const store = createStore(rootReducer);
 
-console.log("Initial state:" + store.getState());
+console.log("Initial state:", store.getState());
 const unsubscribe = store.subscribe(()=> console.log('Current State:'+JSON.stringify(store.getState())));
 
 store.dispatch(buyCookieActionCreator());

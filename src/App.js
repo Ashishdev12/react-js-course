@@ -15,6 +15,11 @@ import BookStoreHttpFunction from './components/books/books-function-http-compon
 import BookViewHttpFunction from './components/books/books-function-http-components/bookViewHttpFunction';
 import BookAddHttpFunction from './components/books/books-function-http-components/bookAddHttpFunction';
 
+import CookieContainer from './components/redux/react-redux-cookie-demo/components/cookiesContainer';
+import { Provider } from 'react-redux';
+import store from './components/redux/react-redux-cookie-demo/store/store';
+
+
 
 
 
@@ -37,6 +42,7 @@ function App() {
       
     // </React.Fragment>
 
+    <Provider store={store}>
     <div>
       <Header></Header>
       <Routes>
@@ -58,8 +64,11 @@ function App() {
        
         <Route path="book-add-http-function" element={<BookAddHttpFunction/>}></Route>
 
+        <Route path="redux-cookie" element={<CookieContainer/>}></Route>
+
       </Routes>
     </div>
+    </Provider>
 
   );
 }
