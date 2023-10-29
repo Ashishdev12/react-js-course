@@ -17,7 +17,9 @@ import BookAddHttpFunction from './components/books/books-function-http-componen
 
 import CookieContainer from './components/redux/react-redux-cookie-demo/components/cookiesContainer';
 import { Provider } from 'react-redux';
-import store from './components/redux/react-redux-cookie-demo/store/store';
+// import store from './components/redux/react-redux-cookie-demo/store/store';
+import BookStoreReduxFunction from './components/redux/react-redux-book-demo/components/bookStoreReduxFunction';
+import store from './components/redux/react-redux-book-demo/store/store';
 
 
 
@@ -65,6 +67,7 @@ function App() {
         <Route path="book-add-http-function" element={<BookAddHttpFunction/>}></Route>
 
         <Route path="redux-cookie" element={<CookieContainer/>}></Route>
+        <Route path="redux-book" element={<BookStoreReduxFunction/>}></Route>
 
       </Routes>
     </div>
