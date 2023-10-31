@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -41,6 +41,10 @@ function Header() {
 
           <li className='nav-item'>
             <Link className='nav-link' to="/redux-saga-book">Redux Saga Book Demo</Link>
+          </li>
+
+          <li className='nav-item'>
+            <Link className='nav-link' to="/hooks">Hooks Demo</Link>
           </li>
 
 

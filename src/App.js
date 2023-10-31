@@ -20,7 +20,11 @@ import { Provider } from 'react-redux';
 // import store from './components/redux/react-redux-cookie-demo/store/store';
 import BookStoreReduxFunction from './components/redux/react-redux-book-demo/components/bookStoreReduxFunction';
 import BookStoreReduxSagaFunction from './components/redux/react-redux-saga-book-demo/components/bookStoreReduxSagaFunction';
-import store from './components/redux/react-redux-book-demo/store/store';
+// import store from './components/redux/react-redux-book-demo/store/store';
+import store from './components/redux/react-redux-saga-book-demo/store/store';
+import HooksHeader from './components/hooks/hooks-header';
+import UseStateDemo from './components/hooks/useStateDemo';
+import RootComponent from './components/hooks/use-context-demo/rootComponent';
 
 
 
@@ -70,6 +74,12 @@ function App() {
         <Route path="redux-cookie" element={<CookieContainer/>}></Route>
         <Route path="redux-book" element={<BookStoreReduxFunction/>}></Route>
         <Route path="redux-saga-book" element={<BookStoreReduxSagaFunction/>}></Route>
+
+
+        <Route path="hooks" element={<HooksHeader/>}>
+          <Route path="use-state" element={<UseStateDemo/>}></Route>
+          <Route path="use-context" element={<RootComponent/>}></Route>
+        </Route>
 
       </Routes>
     </div>
