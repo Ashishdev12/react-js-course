@@ -15,6 +15,20 @@ function HooksHeader() {
           <li className='nav-item'>
             <Link className='nav-link' to="use-context">UseContext Demo </Link>
           </li>
+
+          <li className='nav-item'>
+            <Link className='nav-link' to="class-demo">Class Demo </Link>
+          </li>
+
+          <li className='nav-item'>
+            <Link className='nav-link' to="use-effect">Use Effect Demo </Link>
+          </li>
+
+          <li className='nav-item'>
+            <Link className='nav-link' to="custom-hook">Use Effect Demo </Link>
+          </li>
+
+
         </ul>
       </div>
     </nav>

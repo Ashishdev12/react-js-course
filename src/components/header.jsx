@@ -19,6 +19,10 @@ function Header() {
             <Link className='nav-link' to="/list-colors">ListColors Component</Link>
           </li>
 
+          <li className="nav-item">
+            <Link className="nav-link" to="/todo-lifecycle">Todo Lifecycle Component</Link>
+          </li>
+
           <li className='nav-item'>
             <Link className='nav-link' to="/book-store-class">BookStore Class Component</Link>
           </li>

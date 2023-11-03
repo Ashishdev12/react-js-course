@@ -26,6 +26,11 @@ import HooksHeader from './components/hooks/hooks-header';
 import UseStateDemo from './components/hooks/useStateDemo';
 import RootComponent from './components/hooks/use-context-demo/rootComponent';
 
+import CounterTitleClass from './components/hooks/use-effect-demo/counterTitleClass';
+import CounterTitleFunction from './components/hooks/use-effect-demo/counterTitleFunction';
+import CounterTitleFunction1 from './components/hooks/custom-hooks/counterTitleFunction1';
+
+import ToDoListParent from './components/lifecycle-methods/toDoItemParent';
 
 
 
@@ -57,6 +62,7 @@ function App() {
         <Route path="/" element={<Display/>}></Route>
         <Route path="counter" element={<Counter/>}></Route>
         <Route path="list-colors" element={<ListColors/>}></Route>
+        <Route path="todo-lifecycle" element={<ToDoListParent />}></Route>
         <Route path="book-store-class" element={<BookStore/>}></Route>
 
         <Route path="book-store-function" element={<BookStoreFunction/>}>
@@ -79,6 +85,9 @@ function App() {
         <Route path="hooks" element={<HooksHeader/>}>
           <Route path="use-state" element={<UseStateDemo/>}></Route>
           <Route path="use-context" element={<RootComponent/>}></Route>
+          <Route path="class-demo" element={<CounterTitleClass />}></Route>
+          <Route path="use-effect" element={<CounterTitleFunction/>}></Route>
+          <Route path="custom-hook" element={<CounterTitleFunction1/>}></Route>
         </Route>
 
       </Routes>
