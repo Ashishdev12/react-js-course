@@ -32,6 +32,11 @@ import CounterTitleFunction1 from './components/hooks/custom-hooks/counterTitleF
 
 import ToDoListParent from './components/lifecycle-methods/toDoItemParent';
 
+import RootBookStoreGraphql from './components/graphql/rootBookStoreGraphql';
+import BookStoreGraphql from './components/graphql/bookStoreGraphql';
+import BookViewGraphql from './components/graphql/bookViewGraphql';
+import BookAddGraphql from './components/graphql/bookAddGraphql';
+
 
 
 
@@ -89,6 +94,16 @@ function App() {
           <Route path="use-effect" element={<CounterTitleFunction/>}></Route>
           <Route path="custom-hook" element={<CounterTitleFunction1/>}></Route>
         </Route>
+
+
+        <Route path="root-book-graphql" element={<RootBookStoreGraphql/>}>
+        <Route path="book-store-graphql" element={<BookStoreGraphql/>}>
+        <Route path="book-view-graphql/:bookId" element={<BookViewGraphql/>}></Route>
+        </Route>
+        <Route path="book-add-graphql" element={<BookAddGraphql/>}></Route>
+        </Route>
+
+
 
       </Routes>
     </div>
