@@ -55,6 +55,10 @@ function Header() {
             <Link className='nav-link' to="/root-book-graphql/book-store-graphql">BookStoreGraphql Demo</Link>
           </li>
 
+          <li className='nav-item'>
+            <Link className='nav-link' to="/counter-demo">Counter Testing Demo</Link>
+          </li>
+
 
         </ul>
       </div>

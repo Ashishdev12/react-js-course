@@ -37,6 +37,8 @@ import BookStoreGraphql from './components/graphql/bookStoreGraphql';
 import BookViewGraphql from './components/graphql/bookViewGraphql';
 import BookAddGraphql from './components/graphql/bookAddGraphql';
 
+import CounterDemo from './components/Testing/counterDemo';
+
 
 
 
@@ -103,7 +105,7 @@ function App() {
         <Route path="book-add-graphql" element={<BookAddGraphql/>}></Route>
         </Route>
 
-
+        <Route path="counter-demo" element={<CounterDemo/>}></Route>
 
       </Routes>
     </div>
