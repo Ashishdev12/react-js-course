@@ -1,6 +1,6 @@
 STEPS to dockorize this react application
 ------------------------------------------
-1.  Make sure docker in installed in your local laptop and the docker engine is running
+1.  Make sure docker is installed in your local laptop and the docker engine is running
 2. we have to create our own image to dockerize the react application
 3. to create our own image we need to create a dockerfile in this react project
 4. write the steps for creating your image in the dockerfile - refer the dockerfile in this project
