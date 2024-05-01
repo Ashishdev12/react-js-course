@@ -1,11 +1,13 @@
 import { FETCH_ALL_BOOKS } from "../actions/actionTypes";
 import { takeEvery, put} from 'redux-saga/effects';
 import fetchAllBooksSuccessActionCreator from "../actions/fetchAllBooksSuccessActionCreator";
+
+
 // create a watcher saga
 
 
 function* bookSaga(){
-  yield takeEvery(FETCH_ALL_BOOKS, getAllBooks);
+  yield takeEvery(FETCH_ALL_BOOKS, getAllBooks); // takes 2 arrugment : the action type and the worker saga 
 }
 
 // create a worker saga
@@ -15,7 +17,7 @@ function* getAllBooks(){
    // actually we should be doing a asynchronous API call
     let response = yield fetch('http://localhost:4000/books'); // axios.get("url")
     console.log("response:", response);
-    if(response.status==200){
+    if(response.status===200){
       
       let dataJson = yield response.json();
       console.log("dataJson:", dataJson);
@@ -25,9 +27,9 @@ function* getAllBooks(){
         // so for this we will dispatch another action say FETCH_ALL_BOOKS_SUCCESS and 
         //put this datJson in the payload of this action object
 
-    yield put(fetchAllBooksSuccessActionCreator(dataJson));
+    yield put(fetchAllBooksSuccessActionCreator(dataJson)); // for dispatching 
 
-} else if (response.status==404){
+} else if (response.status===404){
    // yield put(fetchAllBooksFailureActionCreator(response.statusText)); 
 }
 }

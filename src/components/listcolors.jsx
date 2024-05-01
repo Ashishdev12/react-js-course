@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class ListColors extends Component {
   state = {
     title: "ListColors Component",
-    allColors: ["RED", "BLUE", "GREEN"],
+    allColors: ["RED", "BLUE", "GREEN", "Yellow", "White", "Black"],
   };
   render() {
     return (

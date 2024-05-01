@@ -20,6 +20,66 @@ class BookStore extends Component {
         "bookGenre": "Fiction",
         "bookCost": "300",
         "bookImageUrl": "https://images.unsplash.com/photo-1600189261867-30e5ffe7b8da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      }, {
+        "id": 103,
+        "bookTitle": "Harry Potter and the Order Of Phoenix",
+        "bookAuthor": "J.K.Rowling",
+        "bookGenre": "Fiction",
+        "bookCost": "200",
+        "bookImageUrl": "https://images.unsplash.com/photo-1609866138210-84bb689f3c61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=469&q=80"
+      },
+      {
+        "id": 104,
+        "bookTitle": "Harry Potter and the Sorcerers' Stone",
+        "bookAuthor": "J.K.Rowling",
+        "bookGenre": "Fiction",
+        "bookCost": "300",
+        "bookImageUrl": "https://images.unsplash.com/photo-1600189261867-30e5ffe7b8da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      }, {
+        "id": 105,
+        "bookTitle": "Harry Potter and the Order Of Phoenix",
+        "bookAuthor": "J.K.Rowling",
+        "bookGenre": "Fiction",
+        "bookCost": "200",
+        "bookImageUrl": "https://images.unsplash.com/photo-1609866138210-84bb689f3c61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=469&q=80"
+      },
+      {
+        "id": 106,
+        "bookTitle": "Harry Potter and the Sorcerers' Stone",
+        "bookAuthor": "J.K.Rowling",
+        "bookGenre": "Fiction",
+        "bookCost": "300",
+        "bookImageUrl": "https://images.unsplash.com/photo-1600189261867-30e5ffe7b8da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      }, {
+        "id": 107,
+        "bookTitle": "Harry Potter and the Order Of Phoenix",
+        "bookAuthor": "J.K.Rowling",
+        "bookGenre": "Fiction",
+        "bookCost": "200",
+        "bookImageUrl": "https://images.unsplash.com/photo-1609866138210-84bb689f3c61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=469&q=80"
+      },
+      {
+        "id": 108,
+        "bookTitle": "Harry Potter and the Sorcerers' Stone",
+        "bookAuthor": "J.K.Rowling",
+        "bookGenre": "Fiction",
+        "bookCost": "300",
+        "bookImageUrl": "https://images.unsplash.com/photo-1600189261867-30e5ffe7b8da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      }, {
+        "id": 109,
+        "bookTitle": "Harry Potter and the Order Of Phoenix",
+        "bookAuthor": "J.K.Rowling",
+        "bookGenre": "Fiction",
+        "bookCost": "200",
+        "bookImageUrl": "https://images.unsplash.com/photo-1609866138210-84bb689f3c61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=469&q=80"
+      },
+      {
+        "id": 110,
+        "bookTitle": "Harry Potter and the Sorcerers' Stone",
+        "bookAuthor": "J.K.Rowling",
+        "bookGenre": "Fiction",
+        "bookCost": "300",
+        "bookImageUrl": "https://images.unsplash.com/photo-1600189261867-30e5ffe7b8da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
       }
     ]
    } 
@@ -43,6 +103,7 @@ class BookStore extends Component {
           <tbody>
               {this.renderAllBooks()}
           </tbody>
+
         </table>
       </div>
     );
@@ -69,9 +130,9 @@ class BookStore extends Component {
     //here we should remove the book from the allBooks array
     console.log("parent handle del");
     console.log(eachBook.id);
-    let allBook = this.state.allBooks
-    allBook = allBook.filter((eBook)=>(eBook.id!==eachBook.id));
-    this.setState({allBooks: allBook})
+    let allBook = this.state.allBooks;
+    allBook = allBook.filter((eBook)=>(eBook.id !== eachBook.id));
+    this.setState({allBooks: allBook}) 
   }
 }
  

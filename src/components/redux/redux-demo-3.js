@@ -1,6 +1,8 @@
 // ONLY REDUX - book crud operations with hard coded values( we are not fetching data from back end)
+
 const redux = require('redux');
 const createStore = redux.createStore
+
 // actions
 const FETCH_ALL_BOOKS = 'FETCH_ALL_BOOKS';
 const ADD_BOOK = 'ADD_BOOK';
@@ -48,7 +50,7 @@ const addBookActionCreator = () =>{
 const deleteBookActionCreator = (bookId) => {
   return {
     type: DELETE_BOOK,
-    package: bookId
+    payload: bookId
   }
 }
 
@@ -78,7 +80,7 @@ const bookReducer = (state = initialState, action) => {
       case DELETE_BOOK:
         return {
           ...state,
-          data: state.data.filter((item)=> item.id !== action.package )
+          data: state.data.filter((item)=> item.id !== action.payload )
         }
         default:
           return state;

@@ -18,7 +18,7 @@ function BookStoreHttpFunction() {
       })
       .catch((err) => 
         console.error(err))
-      }, []);
+      }, []); // This is the second argument, array of dependency's 
 
   // Render all books function----------
 

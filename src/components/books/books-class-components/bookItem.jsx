@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class BookItem extends Component {
   state = {
-    book: this.props.data
+    // book: this.props.data
   };
 
   // handleDelete = () => {

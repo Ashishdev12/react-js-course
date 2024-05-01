@@ -4,7 +4,7 @@ function UseStateDemo() {
   const [count, setCount] = useState(0);
 
  const handleIncrementByFive = () =>{
-    for(let i=0; i<5; i++){
+    for(let i=0; i<10; i++){
       setCount((prevCount) => prevCount +1);
     }
   }

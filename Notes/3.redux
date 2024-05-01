@@ -30,3 +30,17 @@ action object // action should have abject type
 reducer function
 ----------------
 (state, action)=====> new state
+
+// see folder redux -> redux-demo-1
+// STEPS to run this file
+// 1. install redux library
+//          npm install redux 
+// 2. finnish the code in this file
+// 3. run this file
+//          navigate to the folder of this file and run   the command
+//                  node redux-demo-1.js
+
+//cd-> src
+//cd .\components\
+//cd .\redux\
+//node redux-demo-1.js

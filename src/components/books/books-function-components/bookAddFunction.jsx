@@ -25,11 +25,15 @@ function BookAddFunction() {
 
   return (
     <div className="container m-5">
+
       <form onSubmit={handleSubmit}>
+
         <div className="card">
+
           <div className="card-header bg-success text-white">
             <h2>{title}</h2>
           </div>
+          
           <div className="card-body">
 
             <div>
@@ -91,6 +95,7 @@ function BookAddFunction() {
                 onChange={(event)=>setNewBook({...newBook, bookImageUrl: event.target.value})}
               ></input>
             </div>
+
           </div>
 
           <div className="card-footer bg-success">

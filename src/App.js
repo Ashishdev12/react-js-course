@@ -6,7 +6,9 @@ import Header from './components/header';
 import Display from './components/display';
 import Counter from './components/counter';
 import ListColors from './components/listcolors'; 
+
 import BookStore from './components/books/books-class-components/bookStore';
+
 import BookStoreFunction from './components/books/books-function-components/bookStoreFunction';
 import BookAddFunction from './components/books/books-function-components/bookAddFunction';
 import BookViewFunction from './components/books/books-function-components/bookViewFunction';
@@ -22,10 +24,10 @@ import BookStoreReduxFunction from './components/redux/react-redux-book-demo/com
 import BookStoreReduxSagaFunction from './components/redux/react-redux-saga-book-demo/components/bookStoreReduxSagaFunction';
 // import store from './components/redux/react-redux-book-demo/store/store';
 import store from './components/redux/react-redux-saga-book-demo/store/store';
+
 import HooksHeader from './components/hooks/hooks-header';
 import UseStateDemo from './components/hooks/useStateDemo';
 import RootComponent from './components/hooks/use-context-demo/rootComponent';
-
 import CounterTitleClass from './components/hooks/use-effect-demo/counterTitleClass';
 import CounterTitleFunction from './components/hooks/use-effect-demo/counterTitleFunction';
 import CounterTitleFunction1 from './components/hooks/custom-hooks/counterTitleFunction1';
@@ -53,7 +55,7 @@ function App() {
 
     // <React.Fragment>
     //   {/* <h2>App Component</h2> */}
-    //   {/* <Display></Display> */}
+      // {/* <Display></Display> */}
     //   {/* <Counter></Counter> */}
     //   {/* <ListColors></ListColors> */}
     //   {/* <BookStore></BookStore> */}
@@ -75,13 +77,11 @@ function App() {
         <Route path="book-store-function" element={<BookStoreFunction/>}>
           <Route path="book-view-function/:bookId" element={<BookViewFunction/>}></Route>
         </Route>
-
         <Route path="book-add-function" element={<BookAddFunction/>}></Route>
 
         <Route path="book-store-http-function" element={<BookStoreHttpFunction/>}>
           <Route path="book-view-http-function/:bookId" element={<BookViewHttpFunction/>}></Route>
         </Route>
-       
         <Route path="book-add-http-function" element={<BookAddHttpFunction/>}></Route>
 
         <Route path="redux-cookie" element={<CookieContainer/>}></Route>

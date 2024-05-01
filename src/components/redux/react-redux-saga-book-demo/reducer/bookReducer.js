@@ -9,7 +9,7 @@ const initialState = {
 const bookReducer = (state = initialState, action) =>{
  // return a new state
 switch(action.type){
-  // case FETCH_ALL_BOOKS:
+  // case FETCH_ALL_BOOKS: // no longer needed the watcher saga will listen for this
   //   return{
   //     ...state,
   //     data: [...action.payload]

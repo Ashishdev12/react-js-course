@@ -14,7 +14,7 @@ switch(action.type){
       data: [...action.payload]
       
     }
-    default:
+    default: 
       return state
 }
 }

@@ -18,6 +18,7 @@ function BookItemFunction(props) {
         <td>{props.data.bookCost}</td>
         {/* <td><button type="button" className="btn btn-danger btn-sm" onClick={handleDelete}>Delete</button></td> */}
         <td>
+
           <button
             type="button"
             className="btn btn-warning btn-sm"
@@ -25,8 +26,10 @@ function BookItemFunction(props) {
           >
             View
           </button>
+
         </td>
         <td>
+
           <button
             type="button"
             className="btn btn-danger btn-sm"
@@ -34,6 +37,7 @@ function BookItemFunction(props) {
           >
             Delete
           </button>
+          
         </td>
       </tr>
     </React.Fragment>

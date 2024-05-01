@@ -25,7 +25,7 @@ function HooksHeader() {
           </li>
 
           <li className='nav-item'>
-            <Link className='nav-link' to="custom-hook">Use Effect Demo </Link>
+            <Link className='nav-link' to="custom-hook">Custom Hook Demo </Link>
           </li>
 
 

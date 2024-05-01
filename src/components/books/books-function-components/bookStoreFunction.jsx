@@ -72,6 +72,7 @@ function BookStoreFunction() {
   return (
     <div className="container m-5">
       <h2>{title}</h2>
+
       <button
         type="button"
         className="btn btn-success"
@@ -100,6 +101,7 @@ function BookStoreFunction() {
 
         <tbody>{renderAllBooks()}</tbody>
       </table>
+     
     </div>
   );
 }

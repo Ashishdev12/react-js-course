@@ -8,7 +8,7 @@ function BookStoreReduxFunction(props) {
 
  useEffect(()=>{
   props.fetchAllBooksProps();
- }, [])
+ }, []) // 2nd argument is array of dependency 
 
   const renderAllBooks = () => {
     return props.allBooksProps.map((eachBook) => (
