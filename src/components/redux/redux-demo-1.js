@@ -71,4 +71,6 @@ store.dispatch(buyCookieActionCreator());
 
 store.dispatch(buyCookieActionCreator());
 
+store.dispatch(buyCookieActionCreator());
+
 unsubscribe();
